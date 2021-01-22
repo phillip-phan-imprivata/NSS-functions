@@ -10,8 +10,8 @@ const favoriteBreed = (breed) => {
 let myFavorite = favoriteBreed("pitbull")
 let catFavorite = favoriteBreed("meow")
 
-console.log("When it comes to pets " + myFavorite)
-console.log("When it comes to pets " + catFavorite)
+console.log(`When it comes to pets ${myFavorite}`)
+console.log(`When it comes to pets ${catFavorite}`)
 
 //Addition
 const add = (a, b, c) => {
@@ -22,7 +22,7 @@ console.log(add(17, 4, 11))
 
 //Self-Driving Cars
 const go = (direction, speed) => {
-  console.log("The car is moving " + direction + " at " + speed + " mph.")
+  console.log(`The car is moving ${direction} at ${speed} mph.`)
   if (speed > 75) {
     console.log("SLOW DOWN!")
   }
@@ -122,11 +122,11 @@ const doLaundry = (person) => {
 }
 
 const lazyDayPlanner = (chore, person, day) => {
-  return chore(person) + ` on ${day}`
+  return `${chore(person)} on ${day}`
 }
 
 const busyDayPlanner = (firstChore, secondChore, thirdChore, person, day) => {
-  return `On ${day}, ` + firstChore(person) + `, and ` + secondChore(person) + `, and ` + thirdChore(person) + `.`
+  return `On ${day}, ${firstChore(person)} and ${secondChore(person)} and ${thirdChore(person)}.`
 }
 
 let yomama = {
