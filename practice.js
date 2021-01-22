@@ -31,13 +31,7 @@ const go = (direction, speed) => {
 go("in circles", 82)
 
 //Evens or Odds
-const evenOrOdd = (num) => {
-  if (num % 2 === 0) {
-    return "Even"
-  } else {
-    return "Odd"
-  }
-}
+const evenOrOdd = (num) => {return num % 2 === 0 ? "Even" : "Odd"}
 
 let numArr = [2, 3, 4, 5, 6, 7, 8]
 
